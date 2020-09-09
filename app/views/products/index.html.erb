@@ -1,0 +1,9 @@
+<h1>This is Index View</h1>
+<%= link_to "delete session", "/products/delete"%>
+<% if @cart %>
+    <ul>
+    <% @cart.each do |product| %>
+    <li><%= product %> </li>
+    <%end%>
+    </ul>
+<%end%>
