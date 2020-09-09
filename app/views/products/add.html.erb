@@ -1,0 +1,7 @@
+<h1>This is Add View</h1>
+
+  <%= form_tag("/products", method: "post") do %>
+  <%= label_tag(:product, "Item:") %>
+  <%= text_field_tag(:product) %>
+  <%= submit_tag("add to cart") %>
+<% end %>
