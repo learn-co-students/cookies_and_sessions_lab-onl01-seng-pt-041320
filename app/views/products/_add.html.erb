@@ -1,0 +1,9 @@
+<h1>Add to Cart</h1>
+
+<%= form_tag(products_path) do %>
+    <%= label_tag "Product" %>
+    <%= text_area_tag "product" %>
+
+    <%= button_tag "add to cart" %>
+
+<% end %>

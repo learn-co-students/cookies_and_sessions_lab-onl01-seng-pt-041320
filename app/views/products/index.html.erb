@@ -1,0 +1,13 @@
+<h1>Cart</h1>
+
+<%   @cart = session[:cart] ||= [] %>
+<ul>
+
+<%# <% byebug %> %>
+
+<%= @cart %>
+
+    
+</ul>
+
+<%= render 'add' %>
