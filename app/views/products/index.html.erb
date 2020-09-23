@@ -1,4 +1,6 @@
-<%= @cart %>
+<% session[:cart].each do |item| %>
+    <%= item %>
+<% end %>
 
 <%= form_tag products_path do |f| %>
     <label>Add item</label>
